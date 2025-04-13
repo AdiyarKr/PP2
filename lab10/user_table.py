@@ -2,7 +2,7 @@ import psycopg2
 
 config = psycopg2.connect(
     host = 'localhost',
-    database='phonebook',
+    database='snake_users',
     user='postgres',
     password='1234',
     port='5433'
@@ -19,7 +19,7 @@ cur.execute("""
 
 cur.execute("""
 INSERT INTO users (username, level, score) 
-VALUES ('Rina', 0, 0), ('Shuaq', 0, 0);
+VALUES ('M', 0, 0), ('I', 0, 0);
 """)
 
 config.commit()

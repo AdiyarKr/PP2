@@ -5,7 +5,7 @@ import psycopg2
 name = input()# вводим имя перед началом игры
 config = psycopg2.connect(
     host = 'localhost',
-    database='phonebook',
+    database='snake_users',
     user='postgres',
     password='1234',
     port='5433'
